@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 const pcm = (req, _res, next) => {
   req.params.path = req.params.path || ''
   const path = req.params.path;
-  if (path.indexOf('..') !== -1 || !/^[a-zA-Z0-9\-]*$/.test(path)) {
+  if (path.indexOf('..') !== -1 || !/^[a-zA-Z0-9\-]*$/.test(path) || path.startsWith('-') || path.endsWith('-')) {
     return next(new Error('What are you trying dude???'));
   }
   return next();
