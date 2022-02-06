@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "65841d14-e0be-4784-bf48-58654cb46085",
+		"name": "myjson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get JSON",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Hello world 2.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/json/hello",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"json",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Paths",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Sample world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/list/hello",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"list",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put JSON",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Hello world 2.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/json/hello",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"json",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete JSON",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Hello world 2.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/json/hello",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"json",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Hello world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/json/hello-world",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"json",
+						"hello-world"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
